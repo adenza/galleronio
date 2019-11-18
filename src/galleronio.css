@@ -1,0 +1,55 @@
+div.galleronio {
+  width: 640px;
+  height: 480px;
+  position: relative;
+            padding: 0;
+}
+
+div.galleronio ul {
+ padding:0;
+ margin:0;
+}
+
+div.galleronio button {
+  position: absolute;
+  top: auto;
+  height:100%;
+  width: 25%;
+  z-index: 3;
+  background: none;
+  border:0;
+  user-select: none;
+  outline:0;
+  color: #fff;
+  font-size:40px;
+  opacity: 0;
+  transition: opacity 0.1s ease-in;
+}
+
+div.galleronio button:hover {
+  opacity: 0.6;
+}
+
+div.galleronio button.btn-next {
+  right: 0px;
+}
+
+div.galleronio ul li {
+  display: block;
+  width:100%;
+  height:100%;
+  position: absolute;
+  transition: opacity 0.4s ease-in;
+  opacity: 0;
+}
+
+div.galleronio ul li.active {
+  z-index: 1;
+  opacity: 1;
+}
+
+div.galleronio ul li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
